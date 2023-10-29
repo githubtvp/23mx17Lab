@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Varadha/Desktop/23Mx2023/MX17-DataStrucLab",
-      "program": "c:/Users/Varadha/Desktop/23Mx2023/MX17-DataStrucLab/build/Debug/outDebug",
+      "cwd": "c:/Users/Varadha/Desktop/23Mx2023/MX17-DataStrucLab/PS6",
+      "program": "c:/Users/Varadha/Desktop/23Mx2023/MX17-DataStrucLab/PS6/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
