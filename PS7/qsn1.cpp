@@ -23,6 +23,7 @@ void sortLinkedList(Node *aHd);
 void printReverse(Node *&aHead);
 void swapNodesWithOutSwappingData(Node *aHd, Node *node1, Node *node2);
 void intersectionPt(Node *n1, Node *n2);
+void makeALoopChk(Node *n1);
 
 Node *getLastNode(Node *aHd);
 Node *getANewNode(int aData);
@@ -114,8 +115,7 @@ int main()
   //  sortLinkedList(temp2);
   //  printNodeData(temp2);
    // cout <<"\nhead->data : "<<head->data<<"  head2->data : "<< head2->data << endl;
-
-   
+    makeALoopChk(temp2);
 
     //  cout << "\n---End Test line ---";
     return 0;
@@ -132,10 +132,25 @@ void makeALoopChk(Node *n1)
     return;
     while(temp->next != NULL)
     {
-        
+        temp = temp->next;        
     }
-
-
+    temp->next = head;
+    cout<<"\nLoop completed";
+     Node *lag = head;
+     Node *lead = head->next;
+   //  cout<<"\nlead->data : "<<lead->data;
+   //  cout<<"\nlag->data : "<<lag->data;
+     int count = 1;
+     while(lead!=NULL)
+     {
+        if(lag == lead)
+        {
+            break;
+        }
+        count ++;
+        lead = lead->next;
+     }
+     cout <<"\nNumber of nodes : "<<count;
 }
 
 void intersectionPt(Node *n1, Node *n2)
