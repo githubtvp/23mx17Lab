@@ -121,6 +121,23 @@ int main()
     return 0;
 }
 
+
+void makeALoopChk(Node *n1)
+{
+    Node *temp = new Node();
+    Node *head = new Node();
+    head = n1;
+    temp = n1;
+    if(head == NULL ||head->next == NULL)
+    return;
+    while(temp->next != NULL)
+    {
+        
+    }
+
+
+}
+
 void intersectionPt(Node *n1, Node *n2)
 {
     Node *temp1 = new Node();
